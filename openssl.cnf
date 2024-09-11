@@ -1,0 +1,14 @@
+[req]
+default_bits       = 2048
+distinguished_name = dn
+prompt=no
+x509_extensions    = v3_ca
+
+[dn]
+C = BA
+L = Mostar
+O = Sveuciliste u Mostaru
+CN = Robert Rozic
+
+[ v3_ca ]
+keyUsage = critical, digitalSignature, nonRepudiation

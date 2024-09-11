@@ -1,0 +1,4 @@
+[ usr_cert ]
+basicConstraints = CA:FALSE
+keyUsage = critical, digitalSignature, nonRepudiation
+extendedKeyUsage = emailProtection, clientAuth

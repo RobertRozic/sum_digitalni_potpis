@@ -1,0 +1,24 @@
+[ req ]
+default_bits       = 2048
+default_md         = sha256
+default_keyfile    = ca_private_key.pem
+distinguished_name = req_distinguished_name
+x509_extensions    = v3_ca
+
+[ req_distinguished_name ]
+countryName                     = Country Name (2 letter code)
+countryName_default             = BA
+stateOrProvinceName             = State or Province Name (full name)
+stateOrProvinceName_default     = Hercegovina
+localityName                    = Locality Name (eg, city)
+localityName_default            = Mostar
+0.organizationName              = Organization Name (eg, company)
+0.organizationName_default      = Sveuciliste u Mostaru
+commonName                      = Common Name (e.g. server FQDN or YOUR name)
+commonName_default              = sum.ba
+
+[ v3_ca ]
+basicConstraints = critical, CA:true
+keyUsage = critical, keyCertSign, cRLSign, digitalSignature, nonRepudiation
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always,issuer
